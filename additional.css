@@ -1,0 +1,55 @@
+/* Mobile only */
+@media (max-width: 921px) {
+
+    /* Keep the stacked layout */
+    .site-branding {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: calc(100% - 70px); /* Leave space for menu */
+    }
+
+    /* Make the logo occupy the available width */
+    .custom-logo-link,
+    .site-logo-img {
+        display: block;
+        width: 100%;
+    }
+
+    .custom-logo,
+    .site-logo-img img {
+        width: 70% !important;
+        max-width: 100% !important;
+        height: 80px !important;
+        object-fit: fill;
+    }
+
+    /* Optional spacing */
+    .custom-logo-link {
+        margin-bottom: 8px;
+    }
+}
+
+
+/* Hide author name and bio on author archive pages */
+.ast-author-box {
+    display: none !important;
+}
+
+
+/* Style the back button on the author archive */
+.author .yash-back-button {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 18px;
+    background: #2563eb;
+    color: #ffffff !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.author .yash-back-button:hover {
+    background: #1d4ed8;
+    color: #ffffff !important;
+}
